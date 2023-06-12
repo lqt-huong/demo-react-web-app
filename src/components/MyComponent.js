@@ -1,6 +1,8 @@
 import React from "react";
 import AddUserInfor from "./AddUserInfor";
 import DisplayInfor from "./DisplayInfor";
+import "./DisplayInfor.scss";
+import logo from "./../logo.svg"
 class MyComponent extends React.Component {
   state = {
     listUser: [
@@ -30,6 +32,7 @@ class MyComponent extends React.Component {
           handleAddNewUser={this.handleAddNewUser}
         />
         <br />
+        <img src={logo} />
         <DisplayInfor listUser={this.state.listUser}
 
         />

@@ -16,7 +16,7 @@ class DisplayInfor extends React.Component {
         const { listUser } = this.props;
 
         return (
-            <div>
+            <div className="display-infor-container">
                 <div>
                     <span onClick={() => { this.handleShowHide() }}>{this.state.isShowListUser === true ? "Hide list users:" : "Show list users:"}</span>
                 </div>

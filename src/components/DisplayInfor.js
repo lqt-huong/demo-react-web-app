@@ -21,7 +21,7 @@ class DisplayInfor extends React.Component {
                     <span onClick={() => { this.handleShowHide() }}>{this.state.isShowListUser === true ? "Hide list users:" : "Show list users:"}</span>
                 </div>
                 {this.state.isShowListUser &&
-                    <div>
+                    <>
                         {listUser.map((user) => {
 
 
@@ -38,7 +38,7 @@ class DisplayInfor extends React.Component {
                         })}
 
 
-                    </div>
+                    </>
                 }
             </div>
 

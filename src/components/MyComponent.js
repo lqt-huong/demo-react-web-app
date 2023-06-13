@@ -27,16 +27,21 @@ class MyComponent extends React.Component {
   render() {
 
     return (
-      <div>
-        <AddUserInfor
-          handleAddNewUser={this.handleAddNewUser}
-        />
-        <br />
-        <img src={logo} />
-        <DisplayInfor listUser={this.state.listUser}
+      <>
+        <div className="a">
+          <AddUserInfor
+            handleAddNewUser={this.handleAddNewUser}
+          />
+          <br />
+          <img src={logo} />
+          <DisplayInfor listUser={this.state.listUser}
 
-        />
-      </div>
+          />
+        </div>
+        <div className="b">
+
+        </div>
+      </>
     );
   }
 }

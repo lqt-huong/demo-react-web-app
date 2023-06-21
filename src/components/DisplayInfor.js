@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // class DisplayInfor extends React.Component {
 //     state = {
@@ -50,6 +50,24 @@ const DisplayInfor = (props) => {
     const handleShowHideListUser = () => {
         setShowHideListUser(!isShowListUser);
     }
+
+    useEffect(() => {
+
+        if (listUser.length === 0) {
+            alert('You deleted all the users')
+        }
+        console.log(">> call me useEffect")
+        setTimeout(() => {
+            document.title =
+                'Demo React'
+        }, 3000)
+    },
+        [listUser]
+    )
+
+    useEffect(() => { },)
+
+    console.log(">>> call me render")
     return (
         <div className="display-infor-container">
             <div><span onClick={() => handleShowHideListUser()}>

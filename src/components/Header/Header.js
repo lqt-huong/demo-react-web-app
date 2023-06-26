@@ -19,7 +19,10 @@ const Header = () => {
 
                     </Nav>
                     <Nav>
-                        <NavDropdown title="Settings" id="basic-nav-dropdown">
+                        <button className='btn-login'>Log in</button>
+                        <button className='btn-logout'>Log out</button>
+
+                        {/* <NavDropdown title="Settings" id="basic-nav-dropdown">
                             <NavDropdown.Item >Log in</NavDropdown.Item>
                             <NavDropdown.Item >
                                 Log out
@@ -27,7 +30,7 @@ const Header = () => {
                             <NavDropdown.Item >Profile</NavDropdown.Item>
 
 
-                        </NavDropdown>
+                        </NavDropdown> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 150px;
+    margin-top: 150px ;
     .title-1 {
     font-size: 40px;
     font-weight: 600;
@@ -53,6 +53,7 @@ height: 40px;
 padding: 5px;
 background-color: #353434;
 color: white;
+border: none;
 &:hover {
   background-color: black;
 }

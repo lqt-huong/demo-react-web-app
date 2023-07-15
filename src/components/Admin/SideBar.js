@@ -13,6 +13,7 @@ import sidebarBg from '../../assets/bg2.jpg';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { FaReact } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
+import { Link } from 'react-router-dom';
 const SideBar = ({ image, collapsed, toggled, handleToggleSidebar }) => {
     // const intl = useIntl();
 
@@ -50,7 +51,7 @@ const SideBar = ({ image, collapsed, toggled, handleToggleSidebar }) => {
                     <MenuItem
                         icon={<MdDashboard />}
                     >
-                        Dashboard
+                        Dashboard  <Link to="/admins" />
                     </MenuItem>
 
                 </Menu>
@@ -59,7 +60,9 @@ const SideBar = ({ image, collapsed, toggled, handleToggleSidebar }) => {
                         icon={<FaGem />}
                         title="Features"
                     >
-                        <MenuItem>Quản lý Users</MenuItem>
+                        <MenuItem>Quản lý Users
+                            <Link to="/admins/manage-users" />
+                        </MenuItem>
                         <MenuItem>Quản lý Bài Quiz</MenuItem>
                         <MenuItem>Quán lý Câu Hỏi</MenuItem>
                     </SubMenu>
